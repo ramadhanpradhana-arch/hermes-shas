@@ -5,6 +5,23 @@
 **Owner:** Pepe
 
 **Lokasi:** `C:\Pepe Project\Agent\Hermes\`
+
+## Current Implementation Status
+
+**Priority 0 — Preservation and safety foundation: complete with owner-approved backup exception; physical-drive disaster recovery is unavailable.**
+
+Control documents:
+
+- [Asset manifest](docs/inventory/asset-manifest.yaml)
+- [Audit notes](docs/inventory/audit-notes.md)
+- [Permission policy](docs/policies/permissions.md)
+- [Secret policy](docs/policies/secrets.md)
+- [Legacy preservation policy](docs/policies/preservation.md)
+- [Rollback procedure](docs/recovery/rollback.md)
+- [Project registry](registry/projects.yaml)
+- [Approved design](docs/superpowers/specs/2026-08-15-priority-0-preservation-safety-design.md)
+- [Implementation plan](docs/superpowers/plans/2026-08-15-priority-0-preservation-safety.md)
+
 **Tujuan utama:** Menjadi satu-satunya agent pribadi yang dikembangkan dan digunakan Pepe untuk berpikir, merencanakan, melakukan riset, mengelola proyek, menulis PRD, mengerjakan coding, dan menjalankan pekerjaan rutin secara otomatis.
 
 ---
