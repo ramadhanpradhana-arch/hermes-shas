@@ -28,3 +28,6 @@ __pycache__/
 Thumbs.db
 .idea/
 .vscode/
+
+# Local isolated worktrees
+.worktrees/
