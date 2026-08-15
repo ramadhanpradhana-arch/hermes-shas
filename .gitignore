@@ -1,0 +1,30 @@
+# Runtime secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+credentials*.json
+secrets*.json
+
+# Local runtime state and logs
+logs/
+tmp/
+*.log
+*.pid
+
+# Generated dependencies and caches
+venv/
+.venv/
+node_modules/
+__pycache__/
+.pytest_cache/
+.cache/
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
