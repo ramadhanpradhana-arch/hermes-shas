@@ -1,0 +1,161 @@
+schema_version: 1
+generated_for: hermes-priority-0
+inventory_mode: structured-incremental
+backup_status: waived_by_owner
+default_legacy_action: read
+systems:
+  - id: sage
+    name: Sage
+    original_location: 'C:\Pepe Project\Agent\Sage'
+    role: Strategic thinking partner, PRD author, decision keeper, and project-context owner.
+    asset_categories:
+      - documentation
+      - prds
+      - project_context
+      - decisions
+      - knowledge_vault
+    source_of_truth_for:
+      - legacy_strategy
+      - legacy_prds
+      - legacy_project_decisions
+    sensitivity: internal
+    runtime_status: unknown
+    migration_priority: 2
+    migration_status: inventoried
+    allowed_actions:
+      - read
+    approval_required:
+      - modify
+      - move
+      - delete
+      - disable_runtime
+      - change_source_of_truth
+      - retire
+    known_risks:
+      - nine Mabar PRD files were inaccessible during baseline hashing
+      - active and archived documents require migration-state distinction
+    notes: Legacy authority remains with Sage until each capability is validated in Hermes.
+
+  - id: scout
+    name: Scout
+    original_location: 'C:\Pepe Project\Agent\Scout'
+    role: Research, source tracking, intelligence synthesis, and knowledge-bank owner.
+    asset_categories:
+      - research_documentation
+      - source_lists
+      - intelligence_vault
+      - podcast_insights
+      - obsidian_metadata
+    source_of_truth_for:
+      - legacy_research
+      - legacy_source_lists
+      - legacy_intelligence_vault
+    sensitivity: internal
+    runtime_status: unknown
+    migration_priority: 4
+    migration_status: inventoried
+    allowed_actions:
+      - read
+    approval_required:
+      - modify
+      - move
+      - delete
+      - disable_runtime
+      - change_source_of_truth
+      - retire
+    known_risks:
+      - archived specifications may conflict with active versions if migration ignores file status
+    notes: Active documentation and Vault remain authoritative until Scout migration is validated.
+
+  - id: rex-coders
+    name: Rex/Coders
+    original_location: 'C:\Pepe Project\Agent\Coders'
+    role: Engineering executor runtime, project routing, coding workflow, and operational runbooks.
+    asset_categories:
+      - engineering_documentation
+      - runtime_setup
+      - workspace_instructions
+      - project_routing
+      - runbooks
+      - native_skills
+    source_of_truth_for:
+      - legacy_engineering_workflow
+      - legacy_rex_runtime
+      - legacy_repository_routing
+    sensitivity: credential-bearing
+    runtime_status: unknown
+    migration_priority: 3
+    migration_status: inventoried
+    allowed_actions:
+      - read
+    approval_required:
+      - modify
+      - move
+      - delete
+      - disable_runtime
+      - change_source_of_truth
+      - retire
+    known_risks:
+      - setup configuration may reference runtime credentials
+      - active workspace files coexist with dated backup variants
+      - Windows and WSL repository paths differ
+    notes: Coders contains the Rex implementation; configuration contents require secret-safe handling.
+
+  - id: pixel
+    name: Pixel
+    original_location: 'C:\Pepe Project\Agent\Pixel'
+    role: Design-generation concept, architecture, and roadmap reference.
+    asset_categories:
+      - concept
+      - architecture
+      - roadmap
+    source_of_truth_for:
+      - legacy_design_generation_concept
+    sensitivity: internal
+    runtime_status: inactive
+    migration_priority: deferred
+    migration_status: inventoried
+    allowed_actions:
+      - read
+    approval_required:
+      - modify
+      - move
+      - delete
+      - disable_runtime
+      - change_source_of_truth
+      - retire
+    known_risks:
+      - roadmap is explicitly deferred until the primary Hermes workflow is stable
+    notes: Preserve as reference; do not implement Pixel during early Hermes priorities.
+
+  - id: chimit
+    name: Chimit
+    original_location: 'C:\Pepe Project\Agent\Marketing Specialist - Perhotelan\Chimit - CMO MGM'
+    role: Hospitality marketing knowledge agent, retrieval runtime, and Telegram interface.
+    asset_categories:
+      - application_code
+      - hospitality_knowledge_runtime
+      - retrieval_database
+      - staging_content
+      - operational_scripts
+    source_of_truth_for:
+      - legacy_hospitality_agent_runtime
+      - legacy_hospitality_retrieval_workflow
+    sensitivity: credential-bearing
+    runtime_status: unknown
+    migration_priority: deferred
+    migration_status: inventoried
+    allowed_actions:
+      - read
+    approval_required:
+      - modify
+      - move
+      - delete
+      - disable_runtime
+      - change_source_of_truth
+      - retire
+    known_risks:
+      - runtime root contains credential-bearing configuration
+      - generated vector database should not be treated as source documentation
+      - active implementation coexists with a backup variant
+    notes: Preserve runtime and hospitality knowledge; migration timing requires a later owner decision.

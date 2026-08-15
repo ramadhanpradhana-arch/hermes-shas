@@ -1,0 +1,55 @@
+schema_version: 1
+projects:
+  - id: mabar
+    name: Mabar
+    priority: pilot
+    status: pending_validation
+    objective: Multi-sport scheduling product and initial Hermes engineering pilot.
+    workspace: 'C:\Pepe Project\Projects\Mabar'
+    repository:
+      web: https://github.com/ramadhanpradhana-arch/mabar-app
+      mobile: https://github.com/ramadhanpradhana-arch/mabar-mobile
+    roadmap: 'C:\Pepe Project\Agent\Sage\Projects\Mabar'
+    backlog: 'C:\Pepe Project\Agent\Sage\PRDs\MABAR'
+    definition_of_done: needs_owner_decision
+    source_of_truth:
+      strategy_and_prds: sage
+      engineering_runtime: rex-coders
+      repository_per_task: needs_owner_decision
+    allowed_actions:
+      - read
+      - draft
+      - non_mutating_checks
+    approval_required:
+      - change_source_of_truth
+      - modify_legacy_assets
+      - merge
+      - deploy
+      - retire_legacy_runtime
+    current_task: priority_0_inventory_only
+    last_checkpoint: '2026-08-15T12:28:20+07:00'
+  - id: cv
+    name: Personal CV
+    priority: registered_legacy_project
+    status: active
+    objective: Personal HTML CV for hiring and B2B consulting audiences.
+    workspace: /home/pc/projects/pepe-cv
+    repository: https://github.com/ramadhanpradhana-arch/pepe-cv
+    roadmap: needs_owner_decision
+    backlog: 'C:\Pepe Project\Agent\Sage\PRDs\CV'
+    definition_of_done: 'C:\Pepe Project\Agent\Sage\Projects\CV\manifest.yaml'
+    source_of_truth:
+      project_manifest: sage
+      engineering_runtime: rex-coders
+    allowed_actions:
+      - read
+      - draft
+      - non_mutating_checks
+    approval_required:
+      - change_source_of_truth
+      - modify_legacy_assets
+      - merge
+      - deploy
+      - retire_legacy_runtime
+    current_task: none
+    last_checkpoint: '2026-08-15T12:28:20+07:00'
